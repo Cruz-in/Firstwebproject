@@ -4,12 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>First website - Form</title>
+  <style>
+    h1, h2, h3, h4, h5 {
+      text-align: center;
+    }
+    aside {
+    	width: 30%;
+      float: left;
+    }
+  </style>
+  <style>
+    body {
+      background-image: url("file:///C:/Users/CPlamondon/Downloads/R.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    color: rgb(255, 249, 249);
+      font-family: Arial, sans-serif;
+    
+    }
+      </style>
 </head>
 <body>
   <h1>My first website</h1>
-
   <h2>A website to practise</h2>
   <h3>HTML Forms on Football</h3>
+  <h4><a href="index.html"><img src="homebutton.png" alt="homepage" width="50"/></a></h4>
+  
+  
 
   <p>
     NOTE!:this is a school project. DO NOT put any 
@@ -85,26 +107,28 @@
         <input type="text" id="favTeam" name="favTeam" required><br>
         <label for="goat">Enter YOUR GOAT:</label>
         <select id="goat" name="goat">
-          <option value="cristiano">Cristiano Ronaldo</option>
-          <option value="messi">Lionel Messi</option>
-          <option value="pele">Pelé</option>
-          <option value="maradona">Diego Maradona</option>
-          <option value="cruyff">Johan Cruyff</option>
-          <option value="zidane">Zinedine Zidane</option>
-          <option value="r9">Ronaldo Nazário (R9)</option>
-          <option value="maldini">Paolo Maldini</option>
-          <option value="beckenbauer">Franz Beckenbauer</option>
-          <option value="henry">Thierry Henry</option>
-          <option value="mbappe">Kylian Mbappé</option>
-          <option value="haaland">Erling Haaland</option>
-          <option value="neymar">Neymar Jr.</option>
-          <option value="distefano">Alfredo Di Stéfano</option>
-          <option value="matthaus">Lothar Matthäus</option>
-          <option value="vinicius">Vinícius Júnior</option>
-          <option value="rooney">Wayne Rooney</option>
-          <option value="beckham">David Beckham</option>
-          <option value="bellingham">Jude Bellingham</option>
-        </select>
+        <option value="cristiano">Cristiano Ronaldo</option>
+        <option value="messi">Lionel Messi</option>
+        <option value="pele">Pelé</option>
+        <option value="maradona">Diego Maradona</option>
+        <option value="cruyff">Johan Cruyff</option>
+        <option value="zidane">Zinedine Zidane</option>
+        <option value="r9">Ronaldo Nazário (R9)</option>
+        <option value="maldini">Paolo Maldini</option>
+        <option value="beckenbauer">Franz Beckenbauer</option>
+        <option value="henry">Thierry Henry</option>
+        <option value="mbappe">Kylian Mbappé</option>
+        <option value="haaland">Erling Haaland</option>
+        <option value="neymar">Neymar Jr.</option>
+        <option value="distefano">Alfredo Di Stéfano</option>
+        <option value="matthaus">Lothar Matthäus</option>
+        <option value="vinicius">Vinícius Júnior</option>
+        <option value="rooney">Wayne Rooney</option>
+        <option value="beckham">David Beckham</option>
+        <option value="bellingham">Jude Bellingham</option>
+        <option value="bellingham">Vangelis Pavlidis</option>
+
+      </select>
       </fieldset>
       
       <br/>
@@ -133,21 +157,63 @@
 
       <fieldset>
         <legend>Personal Football Experience</legend>
-         <p>Years of experience:</p>
-        <input type="checkbox" id="exp-0-1" name="experience" value="0-1">
-        <label for="exp-0-1">0 - 1 years</label><br>
-        <input type="checkbox" id="exp-2-3" name="experience" value="2-3">
-        <label for="exp-2-3">2 - 3 years</label><br>
-        <input type="checkbox" id="exp-4-5" name="experience" value="4-5">
-        <label for="exp-4-5">4 - 5 years</label><br>
-        <input type="checkbox" id="exp-6-7" name="experience" value="6-7">
-        <label for="exp-6-7">6 - 7 years</label><br>
-        <input type="checkbox" id="exp-8plus" name="experience" value="8plus">
-        <label for="exp-8plus">8+ years</label><br>
+        <aside>
+        	<label>Years of experience:</label><br>
+    	    <input type="checkbox" id="exp-0-1" name="experience" value="0-1">
+    	    <label for="exp-0-1">0 - 1 years</label><br>
+    	    <input type="checkbox" id="exp-2-3" name="experience" value="2-3">
+        	<label for="exp-2-3">2 - 3 years</label><br>
+        	<input type="checkbox" id="exp-4-5" name="experience" value="4-5">
+        	<label for="exp-4-5">4 - 5 years</label><br>
+        	<input type="checkbox" id="exp-6-7" name="experience" value="6-7">
+        	<label for="exp-6-7">6 - 7 years</label><br>
+        	<input type="checkbox" id="exp-8plus" name="experience" value="8plus">
+        	<label for="exp-8plus">8+ years</label>
+        </aside>
+        <aside>
+        	<label>What team are you currently playing for?:</label><br>
+        
+            <input type="radio" id="2" name="team" value="" />
+            <label for="None">None</label><br>
+            <input type="radio" id="2" name="team" value="" />
+            <label for="community club/Rec">community club/Rec</label><br>
+            <input type="radio" id="2" name="team" value="" />
+            <label for="Club">Club</label><br>
+            <input type="radio" id="2" name="team" value="" />
+            <label for="Premier">Premier</label><br>
+            <input type="radio" id="2" name="team" value="" />
+            <label for="School Team">School Team</label><br>
+            <input type="radio" id="2" name="team" value="" />
+            <label for="Varsity Team">Varsity Team</label><br>
+            <input type="radio" id="2" name="team" value="" />
+            <label for=" Junior Varsity Team">Junior Varsity Team</label><br>
+            <input type="radio" id="2" name="team" value="" />
+            <label for="Intramural Sports">Intramural Sports</label><br>
+            <input type="radio" id="2" name="team" value="" />
+            <label for="Freshman Team">Freshman Team</label><br>
+            <input type="radio" id="2" name="team" value="" />
+            <label for="Semi-pro">Semi-pro</label><br>
+            <input type="radio" id="2" name="team" value="" />
+            <label for="Professional">Professional</label><br>
+            <input type="radio" id="2" name="team" value="" />
+            <label for="Academy">Academy</label><br>
+            
+        </aside>
+        <br />
+        	
       </fieldset>
-
       <button type="submit">Submit</button>
-      <input type="reset" id="reset-button" name="reset" value="Reset Form" />
+     <input type="reset" id="reset-button" name="reset" value="Reset Form" />
+    
     </form>
+
+    
+    <footer style="margin-top:40px; padding:20px; background:#c2293181; text-align:center;">
+    <p>&copy; 2025 My First Website. All rights reserved.</p>
+    <p><a href="https://github.com/Cruz-in" target="_blank">My Github profile</a><br>
+  
+      <a href="index.html">HomePage</a> 
+    </p>
+  </footer>
   </body>
 </html>
