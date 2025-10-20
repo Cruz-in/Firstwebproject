@@ -12,8 +12,8 @@
   <h3>HTML Forms on Football</h3>
 
   <p>
-    NOTE!:this is a school project. NOT NOT put any 
-    perosnal info in the form
+    NOTE!:this is a school project. DO NOT put any 
+    personal info in the form
   </p>
 
   <!--
@@ -41,6 +41,13 @@
           for, which links to the ID of the input the label is for.
       -->
       <label for="fName">First name: </label>
+        <input type="text" id="fName" name="fName" placeholder="ex.Ben"><br>
+        <label for="lName">Last name: </label>
+        <input type="text" id="lName" name="lName" placeholder="ex.Dover"><br>
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com"><br>
+        <label for="phone">Phone number: </label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890"><br>
       <!-- 
         The input tag creates the actual element that users will
         type thier info into
@@ -59,25 +66,88 @@
             required, which forces a user to  have to enter input in the 
             input.
         -->
-        <input type="text" id="fName" name="fName" required/>
+  <!-- This input is already above, removed duplicate -->
       </fieldset>
 
       <fieldset>
-        <legend>Soccer jersey information</legend>
-        <label for="lName">Last name: </label>
-        <input type="text" id="lName" name="lName" required/>
-
+        <legend>Soccer Jersey Information</legend>
+        <label for="jerseyName">Name on jersey (Last name): </label>
+        <input type="text" id="jerseyName" name="jerseyName" required><br>
         <label for="kitNumber">Kit number: </label>
-        <input type="text" id="kitNumber" name="kitNumber" required/><br>
+        <input type="number" id="kitNumber" name="kitNumber" min="1" max="99" step="1" placeholder="1 - 99" required><br>
+      </fieldset>
+      <br/>
+      <br/>
+
+      <fieldset>
+        <legend>Favorites</legend>
+        <label for="favTeam">Favorite Team: </label>
+        <input type="text" id="favTeam" name="favTeam" required><br>
+        <label for="goat">Enter YOUR GOAT:</label>
+        <select id="goat" name="goat">
+          <option value="cristiano">Cristiano Ronaldo</option>
+          <option value="messi">Lionel Messi</option>
+          <option value="pele">Pelé</option>
+          <option value="maradona">Diego Maradona</option>
+          <option value="cruyff">Johan Cruyff</option>
+          <option value="zidane">Zinedine Zidane</option>
+          <option value="r9">Ronaldo Nazário (R9)</option>
+          <option value="maldini">Paolo Maldini</option>
+          <option value="beckenbauer">Franz Beckenbauer</option>
+          <option value="henry">Thierry Henry</option>
+          <option value="mbappe">Kylian Mbappé</option>
+          <option value="haaland">Erling Haaland</option>
+          <option value="neymar">Neymar Jr.</option>
+          <option value="distefano">Alfredo Di Stéfano</option>
+          <option value="matthaus">Lothar Matthäus</option>
+          <option value="vinicius">Vinícius Júnior</option>
+          <option value="rooney">Wayne Rooney</option>
+          <option value="beckham">David Beckham</option>
+          <option value="bellingham">Jude Bellingham</option>
+        </select>
+      </fieldset>
+      
+      <br/>
+      <fieldset>
+        <legend>Choose a Position</legend>
+        <label for="position">Your perfered position:</label>
+        <div style="margin-bottom: 5px;">
+          
+        </div>
+        <select id="position" name="position">
+          <option value="defender">Defender</option>
+          <option value="midfielder">Midfielder</option>
+          <option value="striker">Striker</option>
+          <option value="winger">Winger</option>
+          <option value="full back">Full back</option>
+          <option value="wing back">Wing back</option>
+          <option value="play maker">Play Maker</option>
+          <option value="goal keeper">Goalkeeper</option>
+        </select>
+        <div style="margin-top: 10px;">
+          <label><input type="radio" name="position_side" value="left" required> Left</label>
+          <label style="margin-left: 20px;"><input type="radio" name="position_side" value="middle"> Middle</label>
+          <label style="margin-left: 20px;"><input type="radio" name="position_side" value="right"> Right</label>
+        </div>
       </fieldset>
 
       <fieldset>
-        <legend>Favorite team</legend>
-        <label for="lName">Last name: </label>
-        <input type="text" id="lName" name="lName" required/>
-       <label for="kitNumber">Kit number: </label>
-        <input type="text" id="kitNumber" name="kitNumber" required/>
+        <legend>Personal Football Experience</legend>
+         <p>Years of experience:</p>
+        <input type="checkbox" id="exp-0-1" name="experience" value="0-1">
+        <label for="exp-0-1">0 - 1 years</label><br>
+        <input type="checkbox" id="exp-2-3" name="experience" value="2-3">
+        <label for="exp-2-3">2 - 3 years</label><br>
+        <input type="checkbox" id="exp-4-5" name="experience" value="4-5">
+        <label for="exp-4-5">4 - 5 years</label><br>
+        <input type="checkbox" id="exp-6-7" name="experience" value="6-7">
+        <label for="exp-6-7">6 - 7 years</label><br>
+        <input type="checkbox" id="exp-8plus" name="experience" value="8plus">
+        <label for="exp-8plus">8+ years</label><br>
       </fieldset>
+
+      <button type="submit">Submit</button>
+      <input type="reset" id="reset-button" name="reset" value="Reset Form" />
     </form>
-</body>
+  </body>
 </html>
