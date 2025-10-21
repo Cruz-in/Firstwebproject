@@ -5,13 +5,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
-   button {
-    background-color: rgb(44, 149, 198);
+   button,
+   fieldset {
+    background-color: rgb(126, 175, 52);
     color: white;
     padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+    border-color: white;
+    border-radius: 10px;
     cursor: pointer;
+    spac: 50px;
    }
 
    header nav {
@@ -29,7 +31,7 @@
     text-align: center;
    }
    body {
-    background-image: url("file:///C:/Users/CPlamondon/Downloads/wallpaper.jpg");
+    background-image: url("wallpaper1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -50,19 +52,30 @@
    >
    <a href="forms.html"><button>Football Forms</button></a>
    <a href="Anrsnel.html"><button>Anrsnel fanpage</button></a>
+   <button
+    id="arsenaltitles"
+    style="cursor: not-allowed"
+    onmouseenter="document.getElementById('arsenaltitles').innerHTML = 'Ah I remember now, They dont have any';"
+    onmouseleave="document.getElementById('arsenaltitles').innerHTML = 'Champions leauge Titles won by Arsenal';">
+    Champions leauge Titles won by Arsenal
+   </button>
   </nav>
 
   <br />
 
-  <h1>My first website</h1>
-  <h2>Football realted</h2>
+  <fieldset style="display: inline; background-color: rgb(126, 175, 52)">
+   <h1>My first Website</h1>
+   <h2>Football related Website</h2>
+  </fieldset>
+  <br />
   <h3>Homepage</h3>
   <main>
    <br />
 
    <br />
    <section>
-    <fieldset style="display: inline; background-color: rgb(44, 149, 198)">
+    <fieldset
+     style="display: inline; background-color: rgba(126, 175, 52, 0.608)">
      <legend>About me</legend>
      <p>Hello! My name is Cruz! This is my first website!</p>
      <p>My hobbies</p>
@@ -87,12 +100,18 @@
    style="
     margin-top: 40px;
     padding: 20px;
-    background: #2c95c694;
+    background: rgba(126, 175, 52, 0.608);
     text-align: center;
    ">
-   <p>&copy; 2025 My First Website. No rights reserved.</p>
+   <p>
+    &copy; 2025 My First Website. <i><b>No</b></i> rights reserved.
+   </p>
    <a href="https://github.com/Cruz-in" target="_blank">My Github profile</a> |
    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">MY Youtube Profile</a>
   </footer>
+  <style>
+   footer {
+   }
+  </style>
  </body>
 </html>
